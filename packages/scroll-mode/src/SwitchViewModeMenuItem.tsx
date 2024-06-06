@@ -1,4 +1,4 @@
-import { MenuItem, ViewMode } from '@react-pdf-viewer/core';
+import { MenuItem, ViewMode } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { SwitchViewModeDecorator } from './SwitchViewModeDecorator';
 import { type RenderSwitchViewModeProps } from './types/RenderSwitchViewModeProps';

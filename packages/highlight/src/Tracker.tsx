@@ -1,4 +1,4 @@
-import { type Store } from '@react-pdf-viewer/core';
+import { type Store } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { HIGHLIGHT_LAYER_ATTR, HIGHLIGHT_PAGE_ATTR } from './constants';
 import { getRectFromOffsets } from './getRectFromOffsets';

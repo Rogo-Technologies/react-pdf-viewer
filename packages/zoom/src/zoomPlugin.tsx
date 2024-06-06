@@ -6,7 +6,7 @@ import {
     type RenderViewer,
     type Slot,
     type ViewerState,
-} from '@react-pdf-viewer/core';
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { CurrentScale, CurrentScaleProps } from './CurrentScale';
 import { PinchZoom } from './PinchZoom';

@@ -1,4 +1,4 @@
-import { type LocalizationMap, type Plugin } from '@react-pdf-viewer/core';
+import { type LocalizationMap, type Plugin } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 
 // Types

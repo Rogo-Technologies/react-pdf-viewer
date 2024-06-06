@@ -1,4 +1,4 @@
-import { type Destination, type PdfJs } from '@react-pdf-viewer/core';
+import { type Destination, type PdfJs } from '@rogo-technologies/react-pdf-viewer-core';
 
 export interface StoreProps {
     // Manage the expanded/collapsed state of each bookmark item

@@ -1,4 +1,4 @@
-import { ViewMode } from '@react-pdf-viewer/core';
+import { ViewMode } from '@rogo-technologies/react-pdf-viewer-core';
 
 export interface RenderSwitchViewModeProps {
     isDisabled: boolean;

@@ -1,4 +1,9 @@
-import { LocalizationContext, MenuItem, type LocalizationMap, type Store } from '@react-pdf-viewer/core';
+import {
+    LocalizationContext,
+    MenuItem,
+    type LocalizationMap,
+    type Store,
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { OpenFileIcon } from './OpenFileIcon';
 import { type StoreProps } from './types/StoreProps';

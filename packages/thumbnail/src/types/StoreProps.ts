@@ -1,4 +1,4 @@
-import { RotateDirection, ViewMode, type PdfJs } from '@react-pdf-viewer/core';
+import { RotateDirection, ViewMode, type PdfJs } from '@rogo-technologies/react-pdf-viewer-core';
 
 export interface StoreProps {
     currentPage?: number;

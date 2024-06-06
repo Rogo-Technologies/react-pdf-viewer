@@ -1,4 +1,4 @@
-import { isMac, type Store } from '@react-pdf-viewer/core';
+import { isMac, type Store } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { PrintStatus } from './structs/PrintStatus';
 import { type StoreProps } from './types/StoreProps';

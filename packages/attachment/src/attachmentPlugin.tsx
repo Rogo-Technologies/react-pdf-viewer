@@ -1,4 +1,4 @@
-import { createStore, type Plugin, type PluginOnDocumentLoad } from '@react-pdf-viewer/core';
+import { createStore, type Plugin, type PluginOnDocumentLoad } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { AttachmentListWithStore } from './AttachmentListWithStore';
 import { type StoreProps } from './types/StoreProps';

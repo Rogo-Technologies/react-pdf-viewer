@@ -1,4 +1,4 @@
-import { Icon } from '@react-pdf-viewer/core';
+import { Icon } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 
 export const ExitFullScreenIcon: React.FC = () => (

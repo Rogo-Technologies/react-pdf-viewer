@@ -1,4 +1,4 @@
-import { RotateDirection } from '@react-pdf-viewer/core';
+import { RotateDirection } from '@rogo-technologies/react-pdf-viewer-core';
 
 export interface StoreProps {
     rotate?(direction: RotateDirection): void;

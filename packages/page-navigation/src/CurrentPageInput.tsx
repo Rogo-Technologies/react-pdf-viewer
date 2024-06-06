@@ -1,4 +1,9 @@
-import { LocalizationContext, TextBox, type LocalizationMap, type Store } from '@react-pdf-viewer/core';
+import {
+    LocalizationContext,
+    TextBox,
+    type LocalizationMap,
+    type Store,
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { type StoreProps } from './types/StoreProps';
 import { useCurrentPage } from './useCurrentPage';

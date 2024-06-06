@@ -1,4 +1,9 @@
-import { RotateDirection, createStore, type Plugin, type PluginFunctions } from '@react-pdf-viewer/core';
+import {
+    RotateDirection,
+    createStore,
+    type Plugin,
+    type PluginFunctions,
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { Rotate, RotateProps } from './Rotate';
 import { RotateButton } from './RotateButton';

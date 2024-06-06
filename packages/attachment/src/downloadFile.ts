@@ -1,4 +1,4 @@
-import { type PdfJs } from '@react-pdf-viewer/core';
+import { type PdfJs } from '@rogo-technologies/react-pdf-viewer-core';
 import { getFileName } from './getFileName';
 
 export const downloadFile = (url: string, data: PdfJs.FileData): void => {

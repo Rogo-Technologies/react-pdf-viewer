@@ -5,7 +5,7 @@ import {
     Position,
     Tooltip,
     type LocalizationMap,
-} from '@react-pdf-viewer/core';
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { PrintIcon } from './PrintIcon';
 import { type RenderPrintProps } from './types/RenderPrintProps';

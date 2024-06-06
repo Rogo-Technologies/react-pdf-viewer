@@ -1,4 +1,4 @@
-import { type PdfJs, type Store } from '@react-pdf-viewer/core';
+import { type PdfJs, type Store } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { BookmarkList } from './BookmarkList';
 import { type IsBookmarkExpanded } from './types/IsBookmarkExpanded';

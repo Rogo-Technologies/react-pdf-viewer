@@ -1,4 +1,4 @@
-import { type Plugin, type RenderViewer, type Slot } from '@react-pdf-viewer/core';
+import { type Plugin, type RenderViewer, type Slot } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { DropArea } from './DropArea';
 

@@ -12,7 +12,7 @@ import {
     classNames,
     type LocalizationMap,
     type Toggle,
-} from '@react-pdf-viewer/core';
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 
 const DEFAULT_LEVELS = [0.5, 0.75, 1, 1.25, 1.5, 2, 3, 4];

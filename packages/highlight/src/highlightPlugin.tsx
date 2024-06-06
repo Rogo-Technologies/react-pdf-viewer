@@ -8,7 +8,7 @@ import {
     type RenderViewer,
     type Slot,
     type ViewerState,
-} from '@react-pdf-viewer/core';
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { ClickDrag } from './ClickDrag';
 import { HighlightAreaList } from './HighlightAreaList';

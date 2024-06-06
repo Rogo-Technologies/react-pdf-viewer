@@ -1,4 +1,4 @@
-import { useIsomorphicLayoutEffect, type Store, type StoreHandler } from '@react-pdf-viewer/core';
+import { useIsomorphicLayoutEffect, type Store, type StoreHandler } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { type StoreProps } from './types/StoreProps';
 

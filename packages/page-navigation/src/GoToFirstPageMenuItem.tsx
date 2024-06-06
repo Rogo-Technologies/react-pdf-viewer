@@ -1,4 +1,4 @@
-import { LocalizationContext, MenuItem, type LocalizationMap } from '@react-pdf-viewer/core';
+import { LocalizationContext, MenuItem, type LocalizationMap } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { UpArrowIcon } from './UpArrowIcon';
 import { type RenderGoToPageProps } from './types/index';

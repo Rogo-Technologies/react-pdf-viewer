@@ -1,4 +1,10 @@
-import { LocalizationContext, MinimalButton, Position, Tooltip, type LocalizationMap } from '@react-pdf-viewer/core';
+import {
+    LocalizationContext,
+    MinimalButton,
+    Position,
+    Tooltip,
+    type LocalizationMap,
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { DownArrowIcon } from './DownArrowIcon';
 import { type RenderGoToPageProps } from './types/index';

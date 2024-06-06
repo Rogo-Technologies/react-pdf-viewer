@@ -1,4 +1,9 @@
-import { isFullScreenEnabled, LocalizationContext, MenuItem, type LocalizationMap } from '@react-pdf-viewer/core';
+import {
+    isFullScreenEnabled,
+    LocalizationContext,
+    MenuItem,
+    type LocalizationMap,
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { FullScreenIcon } from './FullScreenIcon';
 

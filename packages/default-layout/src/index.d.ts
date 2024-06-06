@@ -1,13 +1,13 @@
-import { type AttachmentPlugin } from '@react-pdf-viewer/attachment';
-import { type BookmarkPlugin } from '@react-pdf-viewer/bookmark';
-import { type PdfJs, type Plugin } from '@react-pdf-viewer/core';
-import { type ThumbnailPlugin, type ThumbnailPluginProps } from '@react-pdf-viewer/thumbnail';
+import { type AttachmentPlugin } from '@rogo-technologies/react-pdf-viewer-attachment';
+import { type BookmarkPlugin } from '@rogo-technologies/react-pdf-viewer-bookmark';
+import { type PdfJs, type Plugin } from '@rogo-technologies/react-pdf-viewer-core';
+import { type ThumbnailPlugin, type ThumbnailPluginProps } from '@rogo-technologies/react-pdf-viewer-thumbnail';
 import {
     type ToolbarPlugin,
     type ToolbarPluginProps,
     type ToolbarProps,
     type ToolbarSlot,
-} from '@react-pdf-viewer/toolbar';
+} from '@rogo-technologies/react-pdf-viewer-toolbar';
 import * as React from 'react';
 
 // Types

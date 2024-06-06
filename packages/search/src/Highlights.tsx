@@ -1,4 +1,4 @@
-import { LayerRenderStatus, type PluginOnTextLayerRender, type Store } from '@react-pdf-viewer/core';
+import { LayerRenderStatus, type PluginOnTextLayerRender, type Store } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { HightlightItem } from './HightlightItem';
 import { calculateOffset } from './calculateOffset';

@@ -12,7 +12,7 @@
         "target": "es5",
         "baseUrl": ".",
         "paths": {
-            "@react-pdf-viewer/*": ["packages/*/src"],
+            "@rogo-technologies/react-pdf-viewer-*": ["packages/*/src"],
             "*": ["node_modules", "packages"]
         },
         "types": ["expect-puppeteer", "jest-environment-puppeteer", "puppeteer", "@testing-library/jest-dom"]

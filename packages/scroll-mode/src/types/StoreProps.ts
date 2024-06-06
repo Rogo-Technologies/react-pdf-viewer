@@ -1,4 +1,4 @@
-import { ScrollMode, ViewMode } from '@react-pdf-viewer/core';
+import { ScrollMode, ViewMode } from '@rogo-technologies/react-pdf-viewer-core';
 
 export interface StoreProps {
     scrollMode: ScrollMode;

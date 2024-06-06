@@ -1,4 +1,4 @@
-import { Spinner, type PdfJs, type Store, type StoreHandler } from '@react-pdf-viewer/core';
+import { Spinner, type PdfJs, type Store, type StoreHandler } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { BookmarkLoader } from './BookmarkLoader';
 import { type IsBookmarkExpanded } from './types/IsBookmarkExpanded';

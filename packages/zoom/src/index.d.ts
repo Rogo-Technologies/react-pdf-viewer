@@ -1,4 +1,4 @@
-import { SpecialZoomLevel, type Plugin } from '@react-pdf-viewer/core';
+import { SpecialZoomLevel, type Plugin } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 
 // Types

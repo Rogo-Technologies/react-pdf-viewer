@@ -1,4 +1,4 @@
-import { Spinner } from '@react-pdf-viewer/core';
+import { Spinner } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 
 export interface SpinnerContextProps {

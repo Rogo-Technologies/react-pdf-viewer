@@ -1,4 +1,4 @@
-import { ScrollMode } from '@react-pdf-viewer/core';
+import { ScrollMode } from '@rogo-technologies/react-pdf-viewer-core';
 
 export interface RenderSwitchScrollModeProps {
     isDisabled: boolean;

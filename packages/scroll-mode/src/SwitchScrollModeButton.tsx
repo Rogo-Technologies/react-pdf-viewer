@@ -1,4 +1,4 @@
-import { MinimalButton, Position, ScrollMode, Tooltip } from '@react-pdf-viewer/core';
+import { MinimalButton, Position, ScrollMode, Tooltip } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { SwitchScrollModeDecorator } from './SwitchScrollModeDecorator';
 import { type RenderSwitchScrollModeProps } from './types/RenderSwitchScrollModeProps';

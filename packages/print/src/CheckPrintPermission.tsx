@@ -5,7 +5,7 @@ import {
     type LocalizationMap,
     type PdfJs,
     type Store,
-} from '@react-pdf-viewer/core';
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { PrintStatus } from './structs/PrintStatus';
 import { type StoreProps } from './types/StoreProps';

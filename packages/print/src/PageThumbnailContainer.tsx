@@ -1,4 +1,4 @@
-import { getPage, useSafeState, type PageSize, type PdfJs } from '@react-pdf-viewer/core';
+import { getPage, useSafeState, type PageSize, type PdfJs } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { PageThumbnail } from './PageThumbnail';
 

@@ -6,7 +6,7 @@ import {
     type Plugin,
     type PluginFunctions,
     type ViewerState,
-} from '@react-pdf-viewer/core';
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { SwitchScrollMode, SwitchScrollModeProps } from './SwitchScrollMode';
 import { SwitchScrollModeButton } from './SwitchScrollModeButton';

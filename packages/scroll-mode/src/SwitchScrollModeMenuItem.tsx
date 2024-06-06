@@ -1,4 +1,4 @@
-import { MenuItem, ScrollMode } from '@react-pdf-viewer/core';
+import { MenuItem, ScrollMode } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { SwitchScrollModeDecorator } from './SwitchScrollModeDecorator';
 import { type RenderSwitchScrollModeProps } from './types/RenderSwitchScrollModeProps';

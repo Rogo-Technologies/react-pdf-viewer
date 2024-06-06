@@ -1,5 +1,5 @@
 {
-    "name": "@react-pdf-viewer/core",
+    "name": "@rogo-technologies/react-pdf-viewer-core",
     "version": "3.12.0",
     "description": "A React component to view a PDF document",
     "license": "https://react-pdf-viewer.dev/license",

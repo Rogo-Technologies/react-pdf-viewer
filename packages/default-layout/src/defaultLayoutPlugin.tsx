@@ -1,5 +1,5 @@
-import { attachmentPlugin, type AttachmentPlugin } from '@react-pdf-viewer/attachment';
-import { bookmarkPlugin, type BookmarkPlugin } from '@react-pdf-viewer/bookmark';
+import { attachmentPlugin, type AttachmentPlugin } from '@rogo-technologies/react-pdf-viewer-attachment';
+import { bookmarkPlugin, type BookmarkPlugin } from '@rogo-technologies/react-pdf-viewer-bookmark';
 import {
     TextDirection,
     classNames,
@@ -8,14 +8,18 @@ import {
     type Plugin,
     type PluginOnDocumentLoad,
     type RenderViewer,
-} from '@react-pdf-viewer/core';
-import { thumbnailPlugin, type ThumbnailPlugin, type ThumbnailPluginProps } from '@react-pdf-viewer/thumbnail';
+} from '@rogo-technologies/react-pdf-viewer-core';
+import {
+    thumbnailPlugin,
+    type ThumbnailPlugin,
+    type ThumbnailPluginProps,
+} from '@rogo-technologies/react-pdf-viewer-thumbnail';
 import {
     toolbarPlugin,
     type ToolbarPlugin,
     type ToolbarPluginProps,
     type ToolbarProps,
-} from '@react-pdf-viewer/toolbar';
+} from '@rogo-technologies/react-pdf-viewer-toolbar';
 import * as React from 'react';
 import { Sidebar, SidebarTab } from './Sidebar';
 import { type StoreProps } from './types/StoreProps';

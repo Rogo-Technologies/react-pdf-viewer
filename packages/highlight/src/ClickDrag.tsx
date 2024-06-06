@@ -1,4 +1,4 @@
-import { type Store } from '@react-pdf-viewer/core';
+import { type Store } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { getImageFromArea } from './getImageFromArea';
 import { HighlightState, HighlightStateType, NO_SELECTION_STATE } from './types/HighlightState';

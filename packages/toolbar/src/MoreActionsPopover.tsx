@@ -10,8 +10,8 @@ import {
     ViewMode,
     type LocalizationMap,
     type Toggle,
-} from '@react-pdf-viewer/core';
-import { SelectionMode } from '@react-pdf-viewer/selection-mode';
+} from '@rogo-technologies/react-pdf-viewer-core';
+import { SelectionMode } from '@rogo-technologies/react-pdf-viewer-selection-mode';
 import * as React from 'react';
 import { MoreIcon } from './MoreIcon';
 import { type ToolbarSlot } from './types/ToolbarSlot';

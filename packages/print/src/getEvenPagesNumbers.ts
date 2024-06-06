@@ -1,4 +1,4 @@
-import { type PdfJs } from '@react-pdf-viewer/core';
+import { type PdfJs } from '@rogo-technologies/react-pdf-viewer-core';
 
 export const getEvenPagesNumbers = (doc: PdfJs.PdfDocument): number[] =>
     Array(doc.numPages)

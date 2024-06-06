@@ -1,4 +1,9 @@
-import { LocalizationContext, MenuItem, ThemeContext, type LocalizationMap } from '@react-pdf-viewer/core';
+import {
+    LocalizationContext,
+    MenuItem,
+    ThemeContext,
+    type LocalizationMap,
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { DarkIcon } from './DarkIcon';
 import { LightIcon } from './LightIcon';

@@ -1,4 +1,9 @@
-import { createStore, type Plugin, type PluginOnDocumentLoad, type ViewerState } from '@react-pdf-viewer/core';
+import {
+    createStore,
+    type Plugin,
+    type PluginOnDocumentLoad,
+    type ViewerState,
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { ShowProperties, ShowPropertiesProps } from './ShowProperties';
 import { ShowPropertiesMenuItem } from './ShowPropertiesMenuItem';

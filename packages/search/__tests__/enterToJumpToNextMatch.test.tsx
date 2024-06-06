@@ -1,5 +1,5 @@
-import { PdfJsApiContext, Viewer, type PdfJsApiProvider } from '@react-pdf-viewer/core';
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+import { PdfJsApiContext, Viewer, type PdfJsApiProvider } from '@rogo-technologies/react-pdf-viewer-core';
+import { defaultLayoutPlugin } from '@rogo-technologies/react-pdf-viewer-default-layout';
 import { fireEvent, render, waitForElementToBeRemoved } from '@testing-library/react';
 import * as PdfJs from 'pdfjs-dist';
 import * as React from 'react';

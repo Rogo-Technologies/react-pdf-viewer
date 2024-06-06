@@ -3,7 +3,7 @@
 This plugin allows user to download the current file.
 
 ```javascript
-import { downloadPlugin } from '@react-pdf-viewer/download';
+import { downloadPlugin } from '@rogo-technologies/react-pdf-viewer-download';
 
 const downloadPluginInstance = downloadPlugin();
 
@@ -26,7 +26,7 @@ return (
 ## Use a custom button
 
 ```javascript
-import { downloadPlugin } from '@react-pdf-viewer/download';
+import { downloadPlugin } from '@rogo-technologies/react-pdf-viewer-download';
 
 const downloadPluginInstance = downloadPlugin();
 
@@ -69,7 +69,7 @@ By default, the name of download file is determined by the `name` properties of 
 You can customize it as following:
 
 ```javascript
-import { OpenFile } from '@react-pdf-viewer/core';
+import { OpenFile } from '@rogo-technologies/react-pdf-viewer-core';
 
 const downloadPluginInstance = downloadPlugin({
     fileNameGenerator: (file: OpenFile) => {

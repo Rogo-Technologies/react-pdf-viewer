@@ -1,4 +1,4 @@
-import { FullScreenMode, SpecialZoomLevel } from '@react-pdf-viewer/core';
+import { FullScreenMode, SpecialZoomLevel } from '@rogo-technologies/react-pdf-viewer-core';
 
 export interface StoreProps {
     enterFullScreenMode(target: HTMLElement): void;

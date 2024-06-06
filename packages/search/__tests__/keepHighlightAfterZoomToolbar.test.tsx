@@ -1,5 +1,5 @@
-import { PdfJsApiContext, Viewer, type PdfJsApiProvider } from '@react-pdf-viewer/core';
-import { toolbarPlugin } from '@react-pdf-viewer/toolbar';
+import { PdfJsApiContext, Viewer, type PdfJsApiProvider } from '@rogo-technologies/react-pdf-viewer-core';
+import { toolbarPlugin } from '@rogo-technologies/react-pdf-viewer-toolbar';
 import { findAllByTitle } from '@testing-library/dom';
 import { fireEvent, render, waitForElementToBeRemoved } from '@testing-library/react';
 import * as PdfJs from 'pdfjs-dist';

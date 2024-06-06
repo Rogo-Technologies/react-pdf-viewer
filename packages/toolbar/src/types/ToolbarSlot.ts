@@ -1,31 +1,40 @@
-import { type EnterFullScreenMenuItemProps, type EnterFullScreenProps } from '@react-pdf-viewer/full-screen';
-import { type DownloadMenuItemProps, type DownloadProps } from '@react-pdf-viewer/get-file';
-import { type OpenProps } from '@react-pdf-viewer/open';
+import {
+    type EnterFullScreenMenuItemProps,
+    type EnterFullScreenProps,
+} from '@rogo-technologies/react-pdf-viewer-full-screen';
+import { type DownloadMenuItemProps, type DownloadProps } from '@rogo-technologies/react-pdf-viewer-get-file';
+import { type OpenProps } from '@rogo-technologies/react-pdf-viewer-open';
 import {
     type CurrentPageLabelProps,
     type GoToPageMenuItemProps,
     type GoToPageProps,
     type NumberOfPagesProps,
-} from '@react-pdf-viewer/page-navigation';
-import { type PrintMenuItemProps, type PrintProps } from '@react-pdf-viewer/print';
-import { type ShowPropertiesMenuItemProps, type ShowPropertiesProps } from '@react-pdf-viewer/properties';
-import { type RotateDecoratorProps, type RotateProps } from '@react-pdf-viewer/rotate';
+} from '@rogo-technologies/react-pdf-viewer-page-navigation';
+import { type PrintMenuItemProps, type PrintProps } from '@rogo-technologies/react-pdf-viewer-print';
+import {
+    type ShowPropertiesMenuItemProps,
+    type ShowPropertiesProps,
+} from '@rogo-technologies/react-pdf-viewer-properties';
+import { type RotateDecoratorProps, type RotateProps } from '@rogo-technologies/react-pdf-viewer-rotate';
 import {
     type SwitchScrollModeMenuItemProps,
     type SwitchScrollModeProps,
     type SwitchViewModeMenuItemProps,
     type SwitchViewModeProps,
-} from '@react-pdf-viewer/scroll-mode';
-import { type SearchProps, type ShowSearchPopoverProps } from '@react-pdf-viewer/search';
-import { type SwitchSelectionModeMenuItemProps, type SwitchSelectionModeProps } from '@react-pdf-viewer/selection-mode';
-import { type SwitchThemeMenuItemProps, type SwitchThemeProps } from '@react-pdf-viewer/theme';
+} from '@rogo-technologies/react-pdf-viewer-scroll-mode';
+import { type SearchProps, type ShowSearchPopoverProps } from '@rogo-technologies/react-pdf-viewer-search';
+import {
+    type SwitchSelectionModeMenuItemProps,
+    type SwitchSelectionModeProps,
+} from '@rogo-technologies/react-pdf-viewer-selection-mode';
+import { type SwitchThemeMenuItemProps, type SwitchThemeProps } from '@rogo-technologies/react-pdf-viewer-theme';
 import {
     type CurrentScaleProps,
     type ZoomInProps,
     type ZoomMenuItemProps,
     type ZoomOutProps,
     type ZoomProps,
-} from '@react-pdf-viewer/zoom';
+} from '@rogo-technologies/react-pdf-viewer-zoom';
 import * as React from 'react';
 
 export interface ToolbarSlot {

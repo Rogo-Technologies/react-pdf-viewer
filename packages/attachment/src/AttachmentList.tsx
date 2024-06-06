@@ -5,7 +5,7 @@ import {
     classNames,
     useIsomorphicLayoutEffect,
     type LocalizationMap,
-} from '@react-pdf-viewer/core';
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { downloadFile } from './downloadFile';
 import { type FileItem } from './types/FileItem';

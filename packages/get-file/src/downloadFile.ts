@@ -1,4 +1,4 @@
-import { type PdfJs } from '@react-pdf-viewer/core';
+import { type PdfJs } from '@rogo-technologies/react-pdf-viewer-core';
 
 const isChromeIOS = () => /iphone|ipod|ipad/i.test(navigator.userAgent) && /CriOS/i.test(navigator.userAgent);
 

@@ -1,4 +1,9 @@
-import { LocalizationContext, MenuItem, RotateDirection, type LocalizationMap } from '@react-pdf-viewer/core';
+import {
+    LocalizationContext,
+    MenuItem,
+    RotateDirection,
+    type LocalizationMap,
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { RotateBackwardIcon } from './RotateBackwardIcon';
 import { RotateForwardIcon } from './RotateForwardIcon';

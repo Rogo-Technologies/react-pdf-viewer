@@ -1,4 +1,4 @@
-import { type Store } from '@react-pdf-viewer/core';
+import { type Store } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { EnterFullScreenButton } from './EnterFullScreenButton';
 import { ExitFullScreenButtonWithTooltip } from './ExitFullScreenButtonWithTooltip';

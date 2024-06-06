@@ -1,4 +1,11 @@
-import { Popover, Position, TextDirection, ThemeContext, type Store, type Toggle } from '@react-pdf-viewer/core';
+import {
+    Popover,
+    Position,
+    TextDirection,
+    ThemeContext,
+    type Store,
+    type Toggle,
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { SearchPopover } from './SearchPopover';
 import { ShowSearchPopoverButton } from './ShowSearchPopoverButton';
