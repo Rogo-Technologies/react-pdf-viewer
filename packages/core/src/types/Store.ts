@@ -1,11 +1,3 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type StoreState = Record<string, any>;
 export type StoreKey<T extends StoreState> = string & keyof T;

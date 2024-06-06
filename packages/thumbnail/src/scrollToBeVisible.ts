@@ -1,11 +1,3 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 // Scroll the `ele` element if it's not visible in its scrollable `container`
 export const scrollToBeVisibleVertically = (ele: HTMLElement, container: HTMLElement): void => {
     // Calculate the distance from top of element to the top side of container

@@ -1,11 +1,3 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 export { type ToolbarPluginProps, type ToolbarProps, type ToolbarSlot } from '@react-pdf-viewer/toolbar';
 export { BookmarkIcon } from './BookmarkIcon';
 export { FileIcon } from './FileIcon';

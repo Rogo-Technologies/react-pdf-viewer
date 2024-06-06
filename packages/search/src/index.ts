@@ -1,11 +1,3 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 export { NextIcon } from './NextIcon';
 export { PreviousIcon } from './PreviousIcon';
 export { type RenderSearchProps, type SearchProps } from './Search';

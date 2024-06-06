@@ -1,11 +1,3 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 import { attachmentPlugin, type AttachmentPlugin } from '@react-pdf-viewer/attachment';
 import { bookmarkPlugin, type BookmarkPlugin } from '@react-pdf-viewer/bookmark';
 import {

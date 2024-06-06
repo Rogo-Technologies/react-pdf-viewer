@@ -1,11 +1,3 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 export { type CurrentPageLabelProps, type RenderCurrentPageLabelProps } from './CurrentPageLabel';
 export { DownArrowIcon } from './DownArrowIcon';
 export { NextIcon } from './NextIcon';
