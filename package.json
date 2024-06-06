@@ -2,13 +2,7 @@
     "name": "@rogo-technologies/react-pdf-viewer-root",
     "version": "0.0.0",
     "description": "A React component to view a PDF document",
-    "license": "https://react-pdf-viewer.dev/license",
-    "author": {
-        "name": "Nguyen Huu Phuoc",
-        "email": "me@phuoc.ng",
-        "url": "https://twitter.com/nghuuphuoc"
-    },
-    "homepage": "https://react-pdf-viewer.dev",
+    "type": "module",
     "keywords": [
         "react",
         "react.js",
