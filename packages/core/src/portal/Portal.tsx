@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 import * as React from 'react';
 import { useAnimationFrame } from '../hooks/useAnimationFrame';
 import { Position } from '../structs/Position';

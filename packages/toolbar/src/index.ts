@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 export { MoreActionsPopover } from './MoreActionsPopover';
 export { MoreIcon } from './MoreIcon';
 export { type ToolbarProps } from './Toolbar';

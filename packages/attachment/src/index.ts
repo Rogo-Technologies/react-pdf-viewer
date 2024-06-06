@@ -6,7 +6,5 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 // Plugin
 export * from './attachmentPlugin';

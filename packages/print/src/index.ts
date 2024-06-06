@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 export { type PrintProps } from './Print';
 export { PrintIcon } from './PrintIcon';
 export { type PrintMenuItemProps } from './PrintMenuItem';

@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 import { Popover, Position, TextDirection, ThemeContext, type Store, type Toggle } from '@react-pdf-viewer/core';
 import * as React from 'react';
 import { SearchPopover } from './SearchPopover';

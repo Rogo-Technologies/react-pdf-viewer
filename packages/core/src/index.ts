@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 export { Viewer } from './Viewer';
 export { Worker } from './Worker';
 export { AnnotationType } from './annotations/AnnotationType';

@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 import * as React from 'react';
 import { type Rect } from '../types/Rect';
 import { useIsomorphicLayoutEffect } from './useIsomorphicLayoutEffect';

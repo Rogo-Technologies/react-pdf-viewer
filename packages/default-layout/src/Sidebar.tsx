@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 import {
     LocalizationContext,
     MinimalButton,
@@ -165,7 +163,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             </div>
                         ))}
                     </div>
-                    {currentTab >=0 && (
+                    {currentTab >= 0 && (
                         <div
                             aria-labelledby={`rpv-default-layout__sidebar-tab-${currentTab}`}
                             id="rpv-default-layout__sidebar-content"

@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 export { LocaleIcon } from './LocaleIcon';
 export { type LocalePopoverProps } from './LocalePopover';
 export * from './localeSwitcherPlugin';

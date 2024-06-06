@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 export { DualPageCoverViewModeIcon } from './DualPageCoverViewModeIcon';
 export { DualPageViewModeIcon } from './DualPageViewModeIcon';
 export { HorizontalScrollingIcon } from './HorizontalScrollingIcon';

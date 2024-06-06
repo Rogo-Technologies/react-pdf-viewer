@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 import { Spinner } from '@react-pdf-viewer/core';
 import * as React from 'react';
 

@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 export { ThumbnailDirection } from './structs/ThumbnailDirection';
 export * from './thumbnailPlugin';
 export { type CoverProps } from './types/CoverProps';

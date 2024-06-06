@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 import { createStore, type PdfJs, type Plugin, type RenderViewer, type Slot } from '@react-pdf-viewer/core';
 import * as React from 'react';
 import { Print, PrintProps } from './Print';

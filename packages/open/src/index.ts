@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 export { type OpenProps } from './Open';
 export { OpenFileIcon } from './OpenFileIcon';
 export * from './openPlugin';

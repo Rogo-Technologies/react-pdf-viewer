@@ -6,10 +6,9 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 import {
     ScrollMode,
+    Store,
     ViewMode,
     createStore,
     type Plugin,
@@ -20,12 +19,10 @@ import * as React from 'react';
 import { SwitchScrollMode, SwitchScrollModeProps } from './SwitchScrollMode';
 import { SwitchScrollModeButton } from './SwitchScrollModeButton';
 import { SwitchScrollModeMenuItem } from './SwitchScrollModeMenuItem';
-import { SwitchViewMode, SwitchViewModeProps } from './SwitchViewMode';
 import { SwitchViewModeButton } from './SwitchViewModeButton';
 import { SwitchViewModeMenuItem } from './SwitchViewModeMenuItem';
-import { switchScrollMode } from './switchScrollMode';
-import { switchViewMode } from './switchViewMode';
 import { type StoreProps } from './types/StoreProps';
+import { SwitchViewMode, SwitchViewModeProps } from './SwitchViewMode';
 
 export interface SwitchScrollModeButtonProps {
     mode: ScrollMode;
@@ -164,4 +161,28 @@ export const scrollModePlugin = (): ScrollModePlugin => {
         SwitchViewModeButton: SwitchViewModeButtonDecorator,
         SwitchViewModeMenuItem: SwitchViewModeMenuItemDecorator,
     };
+};
+
+export const switchScrollMode = (store: Store<StoreProps>, scrollMode: ScrollMode) => {
+    store.get('switchScrollMode')(scrollMode);
+    // Get the current viewmode
+    const currentViewMode = store.get('viewMode');
+    if (
+        (scrollMode === ScrollMode.Horizontal || scrollMode === ScrollMode.Wrapped) &&
+        currentViewMode !== ViewMode.SinglePage
+    ) {
+        store.get('switchViewMode')(ViewMode.SinglePage);
+    }
+};
+
+export const switchViewMode = (store: Store<StoreProps>, viewMode: ViewMode) => {
+    store.get('switchViewMode')(viewMode);
+    // Get the current scroll mode
+    const currentScrollMode = store.get('scrollMode');
+    if (
+        (currentScrollMode === ScrollMode.Horizontal || currentScrollMode === ScrollMode.Wrapped) &&
+        viewMode !== ViewMode.SinglePage
+    ) {
+        store.get('switchScrollMode')(ScrollMode.Vertical);
+    }
 };

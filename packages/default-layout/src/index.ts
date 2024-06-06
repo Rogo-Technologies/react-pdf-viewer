@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 export { type ToolbarPluginProps, type ToolbarProps, type ToolbarSlot } from '@react-pdf-viewer/toolbar';
 export { BookmarkIcon } from './BookmarkIcon';
 export { FileIcon } from './FileIcon';

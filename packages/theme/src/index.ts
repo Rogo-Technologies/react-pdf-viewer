@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 export { DarkIcon } from './DarkIcon';
 export { LightIcon } from './LightIcon';
 export { type RenderSwitchThemeProps, type SwitchThemeProps } from './SwitchTheme';

@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 export { DownArrowIcon } from './DownArrowIcon';
 export { RightArrowIcon } from './RightArrowIcon';
 export * from './bookmarkPlugin';

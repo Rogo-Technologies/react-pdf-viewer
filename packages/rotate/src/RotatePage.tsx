@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 import { RotateDirection, type Store } from '@react-pdf-viewer/core';
 import * as React from 'react';
 import { type RenderRotatePageProps } from './types/RenderRotatePageProps';

@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 export { InfoIcon } from './InfoIcon';
 export { type ShowPropertiesProps } from './ShowProperties';
 export * from './propertiesPlugin';

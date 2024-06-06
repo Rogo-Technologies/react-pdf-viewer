@@ -6,8 +6,6 @@
  * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-'use client';
-
 export { type CurrentPageLabelProps, type RenderCurrentPageLabelProps } from './CurrentPageLabel';
 export { DownArrowIcon } from './DownArrowIcon';
 export { NextIcon } from './NextIcon';
