@@ -1,7 +1,1 @@
-'use strict';
-
-if (process.env.NODE_ENV === 'production') {
-    module.exports = require('./cjs/default-layout.min.js');
-} else {
-    module.exports = require('./cjs/default-layout.js');
-}
+export { default } from './esm/default-layout.min.js';

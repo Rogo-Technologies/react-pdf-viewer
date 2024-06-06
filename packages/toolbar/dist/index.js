@@ -1,7 +1,1 @@
-'use strict';
-
-if (process.env.NODE_ENV === 'production') {
-    module.exports = require('./cjs/toolbar.min.js');
-} else {
-    module.exports = require('./cjs/toolbar.js');
-}
+export { default } from './esm/toolbar.min.js';

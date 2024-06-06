@@ -1,7 +1,1 @@
-'use strict';
-
-if (process.env.NODE_ENV === 'production') {
-    module.exports = require('./cjs/scroll-mode.min.js');
-} else {
-    module.exports = require('./cjs/scroll-mode.js');
-}
+export { default } from './esm/scroll-mode.min.js';

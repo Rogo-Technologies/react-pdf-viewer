@@ -1,7 +1,1 @@
-'use strict';
-
-if (process.env.NODE_ENV === 'production') {
-    module.exports = require('./cjs/selection-mode.min.js');
-} else {
-    module.exports = require('./cjs/selection-mode.js');
-}
+export { default } from './esm/selection-mode.min.js';
