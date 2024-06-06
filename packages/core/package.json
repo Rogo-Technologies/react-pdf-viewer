@@ -19,6 +19,7 @@
     "types": "lib/index.d.ts",
     "files": [
         "lib/cjs/*.*",
+        "lib/esm/*.*",
         "lib/styles/*.*",
         "lib/index.d.ts",
         "lib/index.js"
@@ -33,7 +34,7 @@
     "scripts": {
         "clean": "rm -rf lib && mkdir lib",
         "build": "npm run clean && npm run js && npm run css",
-        "js": "cp src/index.d.ts lib && cp dist/index.js lib && rollup -c ../../rollup.config.cjs",
+        "js": "cp src/index.d.ts lib && cp dist/index.js lib && rollup -c ../../rollup.config.js",
         "css": "sass --no-source-map --style compressed src/styles/index.scss lib/styles/index.css",
         "test": "jest --config ../../jest.config.js",
         "release": "npm publish --access public"
