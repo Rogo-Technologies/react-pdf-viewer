@@ -9,7 +9,7 @@ const pkgPath = path.join(rootPackagePath, 'package.json');
 const pkg = JSON.parse(fs.readFileSync(pkgPath));
 
 const outputDir = path.join(rootPackagePath, 'lib');
-const pgkName = pkg.name.split('-').pop();
+const pgkName = pkg.name.replace('@rogo-technologies/react-pdf-viewer-', '');
 
 const external = [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})];
 
