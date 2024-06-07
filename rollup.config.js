@@ -40,7 +40,7 @@ const rollupConfig = [
         plugins: plugins.concat([terser()]),
     },
 
-    // esm
+    // ESM
     {
         input: 'src/index.ts',
         output: {
@@ -52,7 +52,7 @@ const rollupConfig = [
         plugins,
     },
 
-    // Minified esm
+    // Minified ESM
     {
         input: 'src/index.ts',
         output: {
