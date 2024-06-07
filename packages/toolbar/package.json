@@ -1,6 +1,6 @@
 {
     "name": "@rogo-technologies/react-pdf-viewer-toolbar",
-    "version": "3.12.1",
+    "version": "3.12.2",
     "description": "A React component to view a PDF document",
     "type": "module",
     "keywords": [
@@ -25,19 +25,19 @@
         "lib/index.js"
     ],
     "dependencies": {
-        "@rogo-technologies/react-pdf-viewer-core": "3.12.1",
-        "@rogo-technologies/react-pdf-viewer-full-screen": "3.12.1",
-        "@rogo-technologies/react-pdf-viewer-get-file": "3.12.1",
-        "@rogo-technologies/react-pdf-viewer-open": "3.12.1",
-        "@rogo-technologies/react-pdf-viewer-page-navigation": "3.12.1",
-        "@rogo-technologies/react-pdf-viewer-print": "3.12.1",
-        "@rogo-technologies/react-pdf-viewer-properties": "3.12.1",
-        "@rogo-technologies/react-pdf-viewer-rotate": "3.12.1",
-        "@rogo-technologies/react-pdf-viewer-scroll-mode": "3.12.1",
-        "@rogo-technologies/react-pdf-viewer-search": "3.12.1",
-        "@rogo-technologies/react-pdf-viewer-selection-mode": "3.12.1",
-        "@rogo-technologies/react-pdf-viewer-theme": "3.12.1",
-        "@rogo-technologies/react-pdf-viewer-zoom": "3.12.1"
+        "@rogo-technologies/react-pdf-viewer-core": "3.12.2",
+        "@rogo-technologies/react-pdf-viewer-full-screen": "3.12.2",
+        "@rogo-technologies/react-pdf-viewer-get-file": "3.12.2",
+        "@rogo-technologies/react-pdf-viewer-open": "3.12.2",
+        "@rogo-technologies/react-pdf-viewer-page-navigation": "3.12.2",
+        "@rogo-technologies/react-pdf-viewer-print": "3.12.2",
+        "@rogo-technologies/react-pdf-viewer-properties": "3.12.2",
+        "@rogo-technologies/react-pdf-viewer-rotate": "3.12.2",
+        "@rogo-technologies/react-pdf-viewer-scroll-mode": "3.12.2",
+        "@rogo-technologies/react-pdf-viewer-search": "3.12.2",
+        "@rogo-technologies/react-pdf-viewer-selection-mode": "3.12.2",
+        "@rogo-technologies/react-pdf-viewer-theme": "3.12.2",
+        "@rogo-technologies/react-pdf-viewer-zoom": "3.12.2"
     },
     "peerDependencies": {
         "react": ">=16.8.0",
