@@ -1,1 +1,1 @@
-export { default } from './esm/default-layout.min.js';
+export * from './esm/default-layout.min.js';

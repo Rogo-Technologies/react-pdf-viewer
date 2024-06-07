@@ -1,1 +1,1 @@
-export { default } from './esm/print.min.js';
+export * from './esm/print.min.js';

@@ -1,1 +1,1 @@
-export { default } from './esm/drop.min.js';
+export * from './esm/drop.min.js';

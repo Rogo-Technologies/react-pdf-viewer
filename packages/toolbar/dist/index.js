@@ -1,1 +1,1 @@
-export { default } from './esm/toolbar.min.js';
+export * from './esm/toolbar.min.js';

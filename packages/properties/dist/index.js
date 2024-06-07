@@ -1,1 +1,1 @@
-export { default } from './esm/properties.min.js';
+export * from './esm/properties.min.js';

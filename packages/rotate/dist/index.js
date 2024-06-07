@@ -1,1 +1,1 @@
-export { default } from './esm/rotate.min.js';
+export * from './esm/rotate.min.js';

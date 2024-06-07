@@ -1,1 +1,1 @@
-export { default } from './esm/thumbnail.min.js';
+export * from './esm/thumbnail.min.js';

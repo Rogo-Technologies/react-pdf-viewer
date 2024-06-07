@@ -1,1 +1,1 @@
-export { default } from './esm/core.min.js';
+export * from './esm/core.min.js';

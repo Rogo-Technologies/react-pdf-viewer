@@ -1,6 +1,6 @@
 {
     "name": "@rogo-technologies/react-pdf-viewer-default-layout",
-    "version": "3.12.4",
+    "version": "3.12.5",
     "description": "A React component to view a PDF document",
     "type": "module",
     "keywords": [
@@ -25,11 +25,11 @@
         "lib/index.js"
     ],
     "dependencies": {
-        "@rogo-technologies/react-pdf-viewer-attachment": "3.12.4",
-        "@rogo-technologies/react-pdf-viewer-bookmark": "3.12.4",
-        "@rogo-technologies/react-pdf-viewer-core": "3.12.4",
-        "@rogo-technologies/react-pdf-viewer-thumbnail": "3.12.4",
-        "@rogo-technologies/react-pdf-viewer-toolbar": "3.12.4"
+        "@rogo-technologies/react-pdf-viewer-attachment": "3.12.5",
+        "@rogo-technologies/react-pdf-viewer-bookmark": "3.12.5",
+        "@rogo-technologies/react-pdf-viewer-core": "3.12.5",
+        "@rogo-technologies/react-pdf-viewer-thumbnail": "3.12.5",
+        "@rogo-technologies/react-pdf-viewer-toolbar": "3.12.5"
     },
     "peerDependencies": {
         "react": ">=16.8.0",
