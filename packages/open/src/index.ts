@@ -1,3 +1,5 @@
+'use client';
+
 export { type OpenProps } from './Open';
 export { OpenFileIcon } from './OpenFileIcon';
 export * from './openPlugin';

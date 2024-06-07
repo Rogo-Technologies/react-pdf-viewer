@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 
 export const useDebounceCallback = <T extends unknown[]>(callback: (...args: T) => void, wait: number) => {

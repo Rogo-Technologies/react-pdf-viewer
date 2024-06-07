@@ -1,3 +1,5 @@
+'use client';
+
 export { NextIcon } from './NextIcon';
 export { PreviousIcon } from './PreviousIcon';
 export { type RenderSearchProps, type SearchProps } from './Search';

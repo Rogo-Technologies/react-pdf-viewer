@@ -1,3 +1,5 @@
+'use client';
+
 export { HandToolIcon } from './HandToolIcon';
 export { type SwitchSelectionModeProps } from './SwitchSelectionMode';
 export { TextSelectionIcon } from './TextSelectionIcon';

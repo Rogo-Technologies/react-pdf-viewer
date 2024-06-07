@@ -1,3 +1,5 @@
+'use client';
+
 export { MessageIcon } from './MessageIcon';
 export * from './highlightPlugin';
 export { Trigger } from './structs/Trigger';

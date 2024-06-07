@@ -1,3 +1,5 @@
+'use client';
+
 import { getPage, type Store } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { EMPTY_KEYWORD_REGEXP } from './constants';

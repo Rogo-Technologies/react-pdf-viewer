@@ -1,3 +1,5 @@
+'use client';
+
 import {
     isFullScreenEnabled,
     LocalizationContext,

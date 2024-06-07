@@ -1,3 +1,5 @@
+'use client';
+
 import { MinimalButton, Position, Tooltip, ViewMode } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { SwitchViewModeDecorator } from './SwitchViewModeDecorator';

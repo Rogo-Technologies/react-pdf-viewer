@@ -1,3 +1,5 @@
+'use client';
+
 enum Api {
     ExitFullScreen,
     FullScreenChange,

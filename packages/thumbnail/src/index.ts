@@ -1,3 +1,5 @@
+'use client';
+
 export { ThumbnailDirection } from './structs/ThumbnailDirection';
 export * from './thumbnailPlugin';
 export { type CoverProps } from './types/CoverProps';

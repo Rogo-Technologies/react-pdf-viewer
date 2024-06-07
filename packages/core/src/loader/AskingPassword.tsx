@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { PrimaryButton } from '../components/PrimaryButton';
 import { TextBox } from '../components/TextBox';

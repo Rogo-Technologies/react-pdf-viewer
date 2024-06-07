@@ -1,3 +1,5 @@
+'use client';
+
 import * as PdfJs from 'pdfjs-dist';
 import * as React from 'react';
 import { type PdfJsApiProvider } from './types/PdfJsApiProvider';

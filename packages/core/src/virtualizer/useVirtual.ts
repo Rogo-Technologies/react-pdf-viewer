@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { useMeasureRect } from '../hooks/useMeasureRect';
 import { useScroll } from '../hooks/useScroll';

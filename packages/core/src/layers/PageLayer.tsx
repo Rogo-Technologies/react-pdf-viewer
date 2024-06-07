@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { AnnotationLayer } from '../annotations/AnnotationLayer';
 import { Spinner } from '../components/Spinner';

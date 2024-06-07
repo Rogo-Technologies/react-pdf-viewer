@@ -1,3 +1,5 @@
+'use client';
+
 export { Viewer } from './Viewer';
 export { Worker } from './Worker';
 export { AnnotationType } from './annotations/AnnotationType';

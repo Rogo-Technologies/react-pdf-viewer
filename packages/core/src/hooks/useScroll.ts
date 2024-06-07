@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { ScrollDirection } from '../structs/ScrollDirection';
 import { type Offset } from '../types/Offset';
@@ -103,7 +105,7 @@ export const useScroll = ({
                 return Promise.resolve();
             }
 
-            let updatePosition = {
+            const updatePosition = {
                 left: 0,
                 top: 0,
             };

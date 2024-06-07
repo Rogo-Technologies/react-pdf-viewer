@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { useDebounceCallback } from '../hooks/useDebounceCallback';
 import { useIsomorphicLayoutEffect } from '../hooks/useIsomorphicLayoutEffect';

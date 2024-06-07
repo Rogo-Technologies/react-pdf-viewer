@@ -1,5 +1,8 @@
+'use client';
+
 import { attachmentPlugin, type AttachmentPlugin } from '@rogo-technologies/react-pdf-viewer-attachment';
 import { bookmarkPlugin, type BookmarkPlugin } from '@rogo-technologies/react-pdf-viewer-bookmark';
+
 import {
     TextDirection,
     classNames,

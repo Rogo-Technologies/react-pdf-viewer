@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { CheckIcon } from '../icons/CheckIcon';
 import { CommentIcon } from '../icons/CommentIcon';

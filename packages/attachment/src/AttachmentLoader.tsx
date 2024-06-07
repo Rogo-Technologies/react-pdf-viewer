@@ -1,3 +1,5 @@
+'use client';
+
 import {
     LocalizationContext,
     Spinner,

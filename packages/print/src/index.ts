@@ -1,3 +1,5 @@
+'use client';
+
 export { type PrintProps } from './Print';
 export { PrintIcon } from './PrintIcon';
 export { type PrintMenuItemProps } from './PrintMenuItem';

@@ -1,3 +1,5 @@
+'use client';
+
 export { type EnterFullScreenProps, type RenderEnterFullScreenProps } from './EnterFullScreen';
 export { type EnterFullScreenMenuItemProps } from './EnterFullScreenMenuItem';
 export { type RenderExitFullScreenProps } from './ExitFullScreen';

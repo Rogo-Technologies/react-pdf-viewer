@@ -1,3 +1,5 @@
+'use client';
+
 import { type OpenFile, type PdfJs, type Store, type StoreHandler } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { DownloadButton } from './DownloadButton';

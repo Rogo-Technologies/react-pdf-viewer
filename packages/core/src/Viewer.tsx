@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { useIntersectionObserver } from './hooks/useIntersectionObserver';
 import { usePrevious } from './hooks/usePrevious';

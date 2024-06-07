@@ -1,3 +1,5 @@
+'use client';
+
 import { LocalizationContext, MenuItem, type LocalizationMap } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { PrintIcon } from './PrintIcon';

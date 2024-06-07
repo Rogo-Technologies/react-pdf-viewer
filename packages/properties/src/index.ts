@@ -1,3 +1,5 @@
+'use client';
+
 export { InfoIcon } from './InfoIcon';
 export { type ShowPropertiesProps } from './ShowProperties';
 export * from './propertiesPlugin';

@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { renderDefaultToolbar } from './renderDefaultToolbar';
 import { type ToolbarSlot } from './types/ToolbarSlot';

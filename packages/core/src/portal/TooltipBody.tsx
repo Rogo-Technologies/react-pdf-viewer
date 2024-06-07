@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { Position } from '../structs/Position';
 import { TextDirection, ThemeContext } from '../theme/ThemeContext';

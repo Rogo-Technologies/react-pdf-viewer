@@ -1,3 +1,5 @@
+'use client';
+
 export { MoreActionsPopover } from './MoreActionsPopover';
 export { MoreIcon } from './MoreIcon';
 export { type ToolbarProps } from './Toolbar';

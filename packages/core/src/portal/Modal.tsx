@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { useToggle } from '../hooks/useToggle';
 import type { Toggle } from '../types/Toggle';

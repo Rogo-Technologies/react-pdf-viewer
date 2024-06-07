@@ -1,3 +1,5 @@
+'use client';
+
 export { type RotateProps } from './Rotate';
 export { RotateBackwardIcon } from './RotateBackwardIcon';
 export { RotateForwardIcon } from './RotateForwardIcon';

@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { useFullScreen } from '../fullscreen/useFullScreen';
 import { useAnimationFrame } from '../hooks/useAnimationFrame';

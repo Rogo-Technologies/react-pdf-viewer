@@ -1,3 +1,5 @@
+'use client';
+
 export { DarkIcon } from './DarkIcon';
 export { LightIcon } from './LightIcon';
 export { type RenderSwitchThemeProps, type SwitchThemeProps } from './SwitchTheme';

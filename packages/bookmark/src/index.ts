@@ -1,3 +1,5 @@
+'use client';
+
 export { DownArrowIcon } from './DownArrowIcon';
 export { RightArrowIcon } from './RightArrowIcon';
 export * from './bookmarkPlugin';

@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { useIsomorphicLayoutEffect } from '../hooks/useIsomorphicLayoutEffect';
 import { type PdfJs } from '../types/PdfJs';

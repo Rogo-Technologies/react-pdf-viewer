@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 
 export const useIsMounted = (): React.MutableRefObject<boolean> => {

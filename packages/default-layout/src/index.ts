@@ -1,3 +1,5 @@
+'use client';
+
 export {
     type ToolbarPluginProps,
     type ToolbarProps,

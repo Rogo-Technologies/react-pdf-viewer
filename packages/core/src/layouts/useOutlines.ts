@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { useSafeState } from '../hooks/useSafeState';
 import { type PdfJs } from '../types/PdfJs';

@@ -1,3 +1,5 @@
+'use client';
+
 import { LayerRenderStatus, type PluginOnTextLayerRender, type Store } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { HightlightItem } from './HightlightItem';

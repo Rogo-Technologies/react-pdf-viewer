@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { useIsomorphicLayoutEffect } from '../hooks/useIsomorphicLayoutEffect';
 import { LayerRenderStatus } from '../structs/LayerRenderStatus';
@@ -55,7 +57,7 @@ export const CanvasLayer: React.FC<{
         });
 
         // Support high DPI screens
-        let outputScale = window.devicePixelRatio || 1;
+        const outputScale = window.devicePixelRatio || 1;
 
         // Calculate the maximum scale
         const maxScale = Math.sqrt(MAX_CANVAS_SIZE / (viewport.width * viewport.height));

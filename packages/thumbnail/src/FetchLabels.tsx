@@ -1,3 +1,5 @@
+'use client';
+
 import { useSafeState, type PdfJs } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 
