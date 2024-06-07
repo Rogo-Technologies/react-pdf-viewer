@@ -1,5 +1,9 @@
-import { PdfJsApiContext, Viewer, type PdfJsApiProvider } from '@react-pdf-viewer/core';
-import { type ToolbarProps, type ToolbarSlot, type TransformToolbarSlot } from '@react-pdf-viewer/toolbar';
+import { PdfJsApiContext, Viewer, type PdfJsApiProvider } from '@rogo-technologies/react-pdf-viewer-core';
+import {
+    type ToolbarProps,
+    type ToolbarSlot,
+    type TransformToolbarSlot,
+} from '@rogo-technologies/react-pdf-viewer-toolbar';
 import { fireEvent, render, waitForElementToBeRemoved } from '@testing-library/react';
 import * as fs from 'node:fs';
 import * as path from 'path';
@@ -102,7 +106,7 @@ test('Test <CurrentPageLabel> with custom page label', async () => {
     );
     const { findByTestId, getByTestId } = render(<TestCurrentPageLabel fileUrl={pageLabelDocument} />);
 
-    let viewerEle = getByTestId('core__viewer');
+    const viewerEle = getByTestId('core__viewer');
     mockIsIntersecting(viewerEle, true);
     viewerEle['__jsdomMockClientHeight'] = 800;
     viewerEle['__jsdomMockClientWidth'] = 800;

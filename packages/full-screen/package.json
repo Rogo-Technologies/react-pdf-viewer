@@ -1,14 +1,8 @@
 {
-    "name": "@react-pdf-viewer/full-screen",
-    "version": "3.12.0",
+    "name": "@rogo-technologies/react-pdf-viewer-full-screen",
+    "version": "3.12.8",
     "description": "A React component to view a PDF document",
-    "license": "https://react-pdf-viewer.dev/license",
-    "author": {
-        "name": "Nguyen Huu Phuoc",
-        "email": "me@phuoc.ng",
-        "url": "https://twitter.com/nghuuphuoc"
-    },
-    "homepage": "https://react-pdf-viewer.dev",
+    "type": "module",
     "keywords": [
         "react",
         "react.js",
@@ -18,22 +12,20 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/react-pdf-viewer/react-pdf-viewer",
+        "url": "git+https://github.com/Rogo-Technologies/react-pdf-viewer.git",
         "directory": "packages/full-screen"
-    },
-    "bugs": {
-        "url": "https://github.com/react-pdf-viewer/react-pdf-viewer/issues"
     },
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
         "lib/cjs/*.*",
+        "lib/esm/*.*",
         "lib/styles/*.*",
         "lib/index.d.ts",
         "lib/index.js"
     ],
     "dependencies": {
-        "@react-pdf-viewer/core": "3.12.0"
+        "@rogo-technologies/react-pdf-viewer-core": "3.12.8"
     },
     "peerDependencies": {
         "react": ">=16.8.0",
@@ -44,8 +36,11 @@
     },
     "scripts": {
         "clean": "rm -rf lib && mkdir lib",
+        "link": "bun link",
+        "unlink": "bun unlink",
+        "type-check": "tsc --noEmit",
         "build": "npm run clean && npm run js && npm run css",
-        "js": "cp src/index.d.ts lib && cp dist/index.js lib && rollup -c ../../rollup.config.cjs",
+        "js": "cp src/index.d.ts lib && cp dist/index.js lib && rollup -c ../../rollup.config.js",
         "css": "sass --no-source-map --style compressed src/styles/index.scss lib/styles/index.css",
         "release": "npm publish --access public"
     }

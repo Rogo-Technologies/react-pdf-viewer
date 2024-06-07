@@ -1,14 +1,11 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 'use client';
 
-import { RotateDirection, createStore, type Plugin, type PluginFunctions } from '@react-pdf-viewer/core';
+import {
+    RotateDirection,
+    createStore,
+    type Plugin,
+    type PluginFunctions,
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { Rotate, RotateProps } from './Rotate';
 import { RotateButton } from './RotateButton';

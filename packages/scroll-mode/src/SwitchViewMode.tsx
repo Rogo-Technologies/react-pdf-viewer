@@ -1,21 +1,13 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 'use client';
 
-import { ScrollMode, ViewMode, type Store } from '@react-pdf-viewer/core';
+import { ScrollMode, ViewMode, type Store } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { SwitchViewModeButton } from './SwitchViewModeButton';
-import { switchViewMode } from './switchViewMode';
 import { type RenderSwitchViewModeProps } from './types/RenderSwitchViewModeProps';
 import { type StoreProps } from './types/StoreProps';
 import { useScrollMode } from './useScrollMode';
 import { useViewMode } from './useViewMode';
+import { switchViewMode } from './scrollModePlugin';
 
 type RenderSwitchViewMode = (props: RenderSwitchViewModeProps) => React.ReactElement;
 

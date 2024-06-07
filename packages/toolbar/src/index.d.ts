@@ -1,25 +1,17 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
-import { type Plugin } from '@react-pdf-viewer/core';
+import { type Plugin } from '@rogo-technologies/react-pdf-viewer-core';
 import {
     type EnterFullScreenMenuItemProps,
     type EnterFullScreenProps,
     type FullScreenPlugin,
     type FullScreenPluginProps,
-} from '@react-pdf-viewer/full-screen';
+} from '@rogo-technologies/react-pdf-viewer-full-screen';
 import {
     type DownloadMenuItemProps,
     type DownloadProps,
     type GetFilePlugin,
     type GetFilePluginProps,
-} from '@react-pdf-viewer/get-file';
-import { type OpenPlugin, type OpenPluginProps, type OpenProps } from '@react-pdf-viewer/open';
+} from '@rogo-technologies/react-pdf-viewer-get-file';
+import { type OpenPlugin, type OpenPluginProps, type OpenProps } from '@rogo-technologies/react-pdf-viewer-open';
 import {
     type CurrentPageLabelProps,
     type GoToPageMenuItemProps,
@@ -27,39 +19,47 @@ import {
     type NumberOfPagesProps,
     type PageNavigationPlugin,
     type PageNavigationPluginProps,
-} from '@react-pdf-viewer/page-navigation';
+} from '@rogo-technologies/react-pdf-viewer-page-navigation';
 import {
     type PrintMenuItemProps,
     type PrintPlugin,
     type PrintPluginProps,
     type PrintProps,
-} from '@react-pdf-viewer/print';
+} from '@rogo-technologies/react-pdf-viewer-print';
 import {
     type PropertiesPlugin,
     type ShowPropertiesMenuItemProps,
     type ShowPropertiesProps,
-} from '@react-pdf-viewer/properties';
-import { type RotateDecoratorProps, type RotatePlugin, type RotateProps } from '@react-pdf-viewer/rotate';
+} from '@rogo-technologies/react-pdf-viewer-properties';
+import {
+    type RotateDecoratorProps,
+    type RotatePlugin,
+    type RotateProps,
+} from '@rogo-technologies/react-pdf-viewer-rotate';
 import {
     type ScrollModePlugin,
     type SwitchScrollModeMenuItemProps,
     type SwitchScrollModeProps,
     type SwitchViewModeMenuItemProps,
     type SwitchViewModeProps,
-} from '@react-pdf-viewer/scroll-mode';
+} from '@rogo-technologies/react-pdf-viewer-scroll-mode';
 import {
     type SearchPlugin,
     type SearchPluginProps,
     type SearchProps,
     type ShowSearchPopoverProps,
-} from '@react-pdf-viewer/search';
+} from '@rogo-technologies/react-pdf-viewer-search';
 import {
     type SelectionModePlugin,
     type SelectionModePluginProps,
     type SwitchSelectionModeMenuItemProps,
     type SwitchSelectionModeProps,
-} from '@react-pdf-viewer/selection-mode';
-import { type SwitchThemeMenuItemProps, type SwitchThemeProps, type ThemePlugin } from '@react-pdf-viewer/theme';
+} from '@rogo-technologies/react-pdf-viewer-selection-mode';
+import {
+    type SwitchThemeMenuItemProps,
+    type SwitchThemeProps,
+    type ThemePlugin,
+} from '@rogo-technologies/react-pdf-viewer-theme';
 import {
     type CurrentScaleProps,
     type ZoomInProps,
@@ -68,7 +68,7 @@ import {
     type ZoomPlugin,
     type ZoomPluginProps,
     type ZoomProps,
-} from '@react-pdf-viewer/zoom';
+} from '@rogo-technologies/react-pdf-viewer-zoom';
 import * as React from 'react';
 
 // Types

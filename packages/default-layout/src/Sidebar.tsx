@@ -1,11 +1,3 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 'use client';
 
 import {
@@ -20,7 +12,7 @@ import {
     type LocalizationMap,
     type SplitterSize,
     type Store,
-} from '@react-pdf-viewer/core';
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { BookmarkIcon } from './BookmarkIcon';
 import { FileIcon } from './FileIcon';
@@ -165,7 +157,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             </div>
                         ))}
                     </div>
-                    {currentTab >=0 && (
+                    {currentTab >= 0 && (
                         <div
                             aria-labelledby={`rpv-default-layout__sidebar-tab-${currentTab}`}
                             id="rpv-default-layout__sidebar-content"

@@ -1,11 +1,3 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 // Convert a float number to the ratio of two interger numbers using the Farey approximation algorithm
 // See https://the-algorithms.com/algorithm/farey-approximation
 export const floatToRatio = (x: number, limit: number): [number, number] => {

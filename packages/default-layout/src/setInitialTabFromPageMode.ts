@@ -1,13 +1,5 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
-import { type PdfJs } from '@react-pdf-viewer/core';
-import { PageMode } from '@react-pdf-viewer/core';
+import { type PdfJs } from '@rogo-technologies/react-pdf-viewer-core';
+import { PageMode } from '@rogo-technologies/react-pdf-viewer-core';
 
 export const setInitialTabFromPageMode = (doc: PdfJs.PdfDocument) =>
     // eslint-disable-next-line @typescript-eslint/no-unused-vars

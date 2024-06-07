@@ -5,7 +5,7 @@ import {
     type PdfJsApiProvider,
     type Plugin,
     type RenderViewer,
-} from '@react-pdf-viewer/core';
+} from '@rogo-technologies/react-pdf-viewer-core';
 import { fireEvent, render, waitForElementToBeRemoved } from '@testing-library/react';
 import * as fs from 'node:fs';
 import * as path from 'path';

@@ -1,11 +1,3 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 'use client';
 
 import * as React from 'react';
@@ -65,7 +57,7 @@ export const CanvasLayer: React.FC<{
         });
 
         // Support high DPI screens
-        let outputScale = window.devicePixelRatio || 1;
+        const outputScale = window.devicePixelRatio || 1;
 
         // Calculate the maximum scale
         const maxScale = Math.sqrt(MAX_CANVAS_SIZE / (viewport.width * viewport.height));

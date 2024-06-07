@@ -1,11 +1,3 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 const INVALID_PROTOCOL = /^([^\w]*)(javascript|data|vbscript)/im;
 const HTML_ENTITIES = /&#(\w+)(^\w|;)?/g;
 const CTRL_CHARS = /[\u0000-\u001F\u007F-\u009F\u2000-\u200D\uFEFF]/gim;

@@ -12,6 +12,15 @@
         },
         "test": {
             "dependsOn": ["^test"]
+        },
+        "link": {
+            "dependsOn": ["^link"]
+        },
+        "unlink": {
+            "dependsOn": ["^unlink"]
+        },
+        "type-check": {
+            "dependsOn": ["^type-check"]
         }
     }
 }

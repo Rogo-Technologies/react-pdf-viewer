@@ -1,11 +1,3 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 'use client';
 
 import * as React from 'react';
@@ -37,7 +29,7 @@ export const SvgLayer: React.FC<{
 
         page.getOperatorList().then((operatorList) => {
             empty();
-            const graphic = new pdfJsApiProvider.SVGGraphics(page.commonObjs, page.objs) as PdfJs.SVGGraphics;
+            const graphic = new (pdfJsApiProvider as any).SVGGraphics(page.commonObjs, page.objs) as PdfJs.SVGGraphics;
             graphic.getSVG(operatorList, viewport).then((svg) => {
                 // It seems that we don't have to set the size for `svg`
                 svg.style.height = `${height}px`;

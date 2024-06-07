@@ -6,8 +6,8 @@ import {
     Tooltip,
     Viewer,
     type PdfJsApiProvider,
-} from '@react-pdf-viewer/core';
-import { RotateBackwardIcon, RotateForwardIcon } from '@react-pdf-viewer/rotate';
+} from '@rogo-technologies/react-pdf-viewer-core';
+import { RotateBackwardIcon, RotateForwardIcon } from '@rogo-technologies/react-pdf-viewer-rotate';
 import { fireEvent, render, waitForElementToBeRemoved } from '@testing-library/react';
 import * as PdfJs from 'pdfjs-dist';
 import * as React from 'react';

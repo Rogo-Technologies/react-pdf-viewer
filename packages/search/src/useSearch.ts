@@ -1,14 +1,6 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 'use client';
 
-import { getPage, type Store } from '@react-pdf-viewer/core';
+import { getPage, type Store } from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { EMPTY_KEYWORD_REGEXP } from './constants';
 import { normalizeSingleKeyword } from './normalizeKeyword';
@@ -17,6 +9,7 @@ import { type SearchTargetPageFilter } from './types/SearchTargetPage';
 import { type SingleKeyword } from './types/SingleKeyword';
 import { type StoreProps } from './types/StoreProps';
 import { useDocument } from './useDocument';
+import { TextItem } from 'pdfjs-dist/types/src/display/api';
 
 export const useSearch = (
     store: Store<StoreProps>,
@@ -136,7 +129,7 @@ export const useSearch = (
                         return page.getTextContent();
                     })
                     .then((content) => {
-                        const pageContent = content.items.map((item) => item.str || '').join('');
+                        const pageContent = content.items.map((item) => (item as TextItem).str || '').join('');
                         return Promise.resolve({
                             pageContent,
                             pageIndex,

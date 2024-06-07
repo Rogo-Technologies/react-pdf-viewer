@@ -1,11 +1,3 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 'use client';
 
 import {
@@ -18,7 +10,7 @@ import {
     Tooltip,
     type LocalizationMap,
     type Toggle,
-} from '@react-pdf-viewer/core';
+} from '@rogo-technologies/react-pdf-viewer-core';
 import * as React from 'react';
 import { LocaleIcon } from './LocaleIcon';
 
@@ -62,7 +54,6 @@ export const LocalePopover: React.FC<LocalePopoverProps> = ({
                     </MinimalButton>
                 }
                 content={() => label}
-                offset={{ left: 0, top: 8 }}
             />
         );
     };
@@ -93,7 +84,6 @@ export const LocalePopover: React.FC<LocalePopoverProps> = ({
             position={Position.BottomRight}
             target={renderTarget}
             content={renderContent}
-            offset={{ left: 0, top: 8 }}
             closeOnClickOutside={true}
             closeOnEscape={true}
         />

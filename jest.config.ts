@@ -2,8 +2,8 @@ import { type Config } from 'jest';
 
 const config: Config = {
     moduleNameMapper: {
-        '@react-pdf-viewer/core': '<rootDir>/packages/core/src',
-        '@react-pdf-viewer/default-layout': '<rootDir>/packages/default-layout/src',
+        '@rogo-technologies/react-pdf-viewer-core': '<rootDir>/packages/core/src',
+        '@rogo-technologies/react-pdf-viewer-default-layout': '<rootDir>/packages/default-layout/src',
         // In order to load the PDF document in node, we use the ES5 build
         // For pdfjs-dist 2.7.570+
         'pdfjs-dist': '<rootDir>/node_modules/pdfjs-dist/legacy/build/pdf',

@@ -1,12 +1,6 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
+import { PageViewport } from 'pdfjs-dist';
 import { PageMode } from '../structs/PageMode';
+import { PdfJsApiProvider } from './PdfJsApiProvider';
 
 export declare namespace PdfJs {
     // Worker
@@ -133,14 +127,7 @@ export declare namespace PdfJs {
     interface ViewPortCloneParams {
         dontFlip: boolean;
     }
-    interface ViewPort {
-        height: number;
-        rotation: number;
-        transform: number[];
-        width: number;
-        clone(params: ViewPortCloneParams): ViewPort;
-        convertToViewportPoint(x: number, y: number): [number, number];
-    }
+    type ViewPort = PageViewport;
 
     // Render task
     interface PageRenderTask {
@@ -260,17 +247,7 @@ export declare namespace PdfJs {
         transform?: number[];
         viewport: ViewPort;
     }
-    interface Page {
-        getAnnotations(params: AnnotationsParams): Promise<Annotation[]>;
-        getTextContent(): Promise<PageTextContent>;
-        getViewport(params: ViewPortParams): ViewPort;
-        render(params: PageRenderParams): PageRenderTask;
-        getOperatorList(): Promise<PageOperatorList>;
-        commonObjs: PageCommonObjects;
-        objs: PageObjects;
-        ref?: OutlineRef;
-        view: number[];
-    }
+    type Page = PdfJsApiProvider['PDFPageProxy'];
 
     /* eslint-disable @typescript-eslint/no-empty-interface */
     interface PageCommonObjects {}

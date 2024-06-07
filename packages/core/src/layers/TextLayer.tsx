@@ -1,23 +1,16 @@
-/**
- * A React component to view a PDF document
- *
- * @see https://react-pdf-viewer.dev
- * @license https://react-pdf-viewer.dev/license
- * @copyright 2019-2024 Nguyen Huu Phuoc <me@phuoc.ng>
- */
-
 'use client';
 
 import * as React from 'react';
 import { useIsomorphicLayoutEffect } from '../hooks/useIsomorphicLayoutEffect';
 import { LayerRenderStatus } from '../structs/LayerRenderStatus';
-import { type PdfJs } from '../types/PdfJs';
 import { type Plugin } from '../types/Plugin';
 import { PdfJsApiContext } from '../vendors/PdfJsApiContext';
+import { PdfJsApiProvider } from '../types';
+import type { TextLayer as PdfJsTextLayer } from 'pdfjs-dist';
 
 export const TextLayer: React.FC<{
     containerRef: React.MutableRefObject<HTMLDivElement>;
-    page: PdfJs.Page;
+    page: PdfJsApiProvider['PDFPageProxy'];
     pageIndex: number;
     plugins: Plugin[];
     rotation: number;
@@ -25,7 +18,7 @@ export const TextLayer: React.FC<{
     onRenderTextCompleted: () => void;
 }> = ({ containerRef, page, pageIndex, plugins, rotation, scale, onRenderTextCompleted }) => {
     const { pdfJsApiProvider } = React.useContext(PdfJsApiContext);
-    const renderTask = React.useRef<PdfJs.PageRenderTask>();
+    const renderTask = React.useRef<PdfJsTextLayer>();
 
     const empty = (): void => {
         const containerEle = containerRef.current;
@@ -76,15 +69,13 @@ export const TextLayer: React.FC<{
             // Despite the fact that the `--scale-factor` is already set at the root element,
             // pdf-js still complains about setting it either on the element or higher up in the DOM
             containerEle.style.setProperty('--scale-factor', `${scale}`);
-            renderTask.current = pdfJsApiProvider.renderTextLayer({
+            TextLayer;
+            renderTask.current = new pdfJsApiProvider.TextLayer({
                 container: containerEle,
-                // From pdf-js 3.2.146, the `textContent` parameter is deprecated
-                // and will be soon replaced with the `textContentSource` parameter
-                textContent: textContent,
                 textContentSource: textContent,
                 viewport: viewport,
             });
-            renderTask.current.promise.then(
+            renderTask.current.render().then(
                 () => {
                     containerEle.setAttribute('data-testid', `core__text-layer-${pageIndex}`);
                     const spans: HTMLElement[] = [].slice.call(containerEle.children);

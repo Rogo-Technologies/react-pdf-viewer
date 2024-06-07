@@ -1,4 +1,4 @@
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+import { defaultLayoutPlugin } from '@rogo-technologies/react-pdf-viewer-default-layout';
 import { fireEvent, render, waitFor, waitForElementToBeRemoved } from '@testing-library/react';
 import * as PdfJs from 'pdfjs-dist';
 import * as React from 'react';
