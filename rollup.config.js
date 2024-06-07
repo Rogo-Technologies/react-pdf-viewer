@@ -16,29 +16,29 @@ const external = [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.pee
 const plugins = [json(), typescript()];
 
 const rollupConfig = [
-    // CJS
-    {
-        input: 'src/index.ts',
-        output: {
-            exports: 'named',
-            file: path.join(outputDir, `cjs/${pgkName}.js`),
-            format: 'cjs',
-        },
-        external,
-        plugins,
-    },
+    // // CJS
+    // {
+    //     input: 'src/index.ts',
+    //     output: {
+    //         exports: 'named',
+    //         file: path.join(outputDir, `cjs/${pgkName}.js`),
+    //         format: 'cjs',
+    //     },
+    //     external,
+    //     plugins,
+    // },
 
-    // Minified CJS
-    {
-        input: 'src/index.ts',
-        output: {
-            exports: 'named',
-            file: path.join(outputDir, `cjs/${pgkName}.min.js`),
-            format: 'cjs',
-        },
-        external,
-        plugins: plugins.concat([terser()]),
-    },
+    // // Minified CJS
+    // {
+    //     input: 'src/index.ts',
+    //     output: {
+    //         exports: 'named',
+    //         file: path.join(outputDir, `cjs/${pgkName}.min.js`),
+    //         format: 'cjs',
+    //     },
+    //     external,
+    //     plugins: plugins.concat([terser()]),
+    // },
 
     // ESM
     {
@@ -53,16 +53,16 @@ const rollupConfig = [
     },
 
     // Minified ESM
-    {
-        input: 'src/index.ts',
-        output: {
-            exports: 'named',
-            file: path.join(outputDir, `esm/${pgkName}.min.js`),
-            format: 'esm',
-        },
-        external,
-        plugins: plugins.concat([terser()]),
-    },
+    // {
+    //     input: 'src/index.ts',
+    //     output: {
+    //         exports: 'named',
+    //         file: path.join(outputDir, `esm/${pgkName}.min.js`),
+    //         format: 'esm',
+    //     },
+    //     external,
+    //     plugins: plugins.concat([terser()]),
+    // },
 ];
 
 export default rollupConfig;
