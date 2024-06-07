@@ -1,6 +1,6 @@
 {
     "name": "@rogo-technologies/react-pdf-viewer-core",
-    "version": "3.12.6",
+    "version": "3.12.8",
     "description": "A React component to view a PDF document",
     "type": "module",
     "keywords": [
@@ -33,6 +33,9 @@
     },
     "scripts": {
         "clean": "rm -rf lib && mkdir lib",
+        "link": "bun link",
+        "unlink": "bun unlink",
+        "type-check": "tsc --noEmit",
         "build": "npm run clean && npm run js && npm run css",
         "js": "cp src/index.d.ts lib && cp dist/index.js lib && rollup -c ../../rollup.config.js",
         "css": "sass --no-source-map --style compressed src/styles/index.scss lib/styles/index.css",

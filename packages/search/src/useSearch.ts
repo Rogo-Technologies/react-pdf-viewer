@@ -9,6 +9,7 @@ import { type SearchTargetPageFilter } from './types/SearchTargetPage';
 import { type SingleKeyword } from './types/SingleKeyword';
 import { type StoreProps } from './types/StoreProps';
 import { useDocument } from './useDocument';
+import { TextItem } from 'pdfjs-dist/types/src/display/api';
 
 export const useSearch = (
     store: Store<StoreProps>,
@@ -128,7 +129,7 @@ export const useSearch = (
                         return page.getTextContent();
                     })
                     .then((content) => {
-                        const pageContent = content.items.map((item) => item.str || '').join('');
+                        const pageContent = content.items.map((item) => (item as TextItem).str || '').join('');
                         return Promise.resolve({
                             pageContent,
                             pageIndex,

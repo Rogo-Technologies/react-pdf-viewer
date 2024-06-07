@@ -1,18 +1,57 @@
-import { type PdfJs } from './PdfJs';
+import { PDFPageProxy } from 'pdfjs-dist';
+import { OnProgressParameters } from 'pdfjs-dist/types/src/display/api';
 
 export interface PdfJsApiProvider {
-    getDocument(params: PdfJs.GetDocumentParams): PdfJs.LoadingTask;
-
-    // Worker
-    PDFWorker: PdfJs.PDFWorkerConstructor;
-    GlobalWorkerOptions: PdfJs.GlobalWorker;
-
-    // Loading task
-    PasswordResponses: PdfJs.PasswordResponsesValue;
-
-    // Render SVG
-    SVGGraphics: PdfJs.SVGGraphicsConstructor;
-
-    // Render text layer
-    renderTextLayer(params: PdfJs.RenderTextLayerParams): PdfJs.PageRenderTask;
+    AbortException: typeof import('pdfjs-dist').AbortException;
+    AnnotationEditorLayer: typeof import('pdfjs-dist').AnnotationEditorLayer;
+    AnnotationEditorParamsType: typeof import('pdfjs-dist').AnnotationEditorParamsType;
+    AnnotationEditorType: typeof import('pdfjs-dist').AnnotationEditorType;
+    AnnotationEditorUIManager: typeof import('pdfjs-dist').AnnotationEditorUIManager;
+    AnnotationLayer: typeof import('pdfjs-dist').AnnotationLayer;
+    AnnotationMode: typeof import('pdfjs-dist').AnnotationMode;
+    build: typeof import('pdfjs-dist').build;
+    CMapCompressionType: typeof import('pdfjs-dist').CMapCompressionType;
+    ColorPicker: typeof import('pdfjs-dist').ColorPicker;
+    createValidAbsoluteUrl: typeof import('pdfjs-dist').createValidAbsoluteUrl;
+    DOMSVGFactory: typeof import('pdfjs-dist').DOMSVGFactory;
+    DrawLayer: typeof import('pdfjs-dist').DrawLayer;
+    FeatureTest: typeof import('pdfjs-dist').FeatureTest;
+    fetchData: typeof import('pdfjs-dist').fetchData;
+    getDocument: typeof import('pdfjs-dist').getDocument;
+    getFilenameFromUrl: typeof import('pdfjs-dist').getFilenameFromUrl;
+    getPdfFilenameFromUrl: typeof import('pdfjs-dist').getPdfFilenameFromUrl;
+    getXfaPageViewport: typeof import('pdfjs-dist').getXfaPageViewport;
+    GlobalWorkerOptions: typeof import('pdfjs-dist').GlobalWorkerOptions;
+    ImageKind: typeof import('pdfjs-dist').ImageKind;
+    InvalidPDFException: typeof import('pdfjs-dist').InvalidPDFException;
+    isDataScheme: typeof import('pdfjs-dist').isDataScheme;
+    isPdfFile: typeof import('pdfjs-dist').isPdfFile;
+    MissingPDFException: typeof import('pdfjs-dist').MissingPDFException;
+    noContextMenu: typeof import('pdfjs-dist').noContextMenu;
+    normalizeUnicode: typeof import('pdfjs-dist').normalizeUnicode;
+    OPS: typeof import('pdfjs-dist').OPS;
+    Outliner: typeof import('pdfjs-dist').Outliner;
+    PasswordResponses: typeof import('pdfjs-dist').PasswordResponses;
+    PDFDataRangeTransport: typeof import('pdfjs-dist').PDFDataRangeTransport;
+    PDFDateString: typeof import('pdfjs-dist').PDFDateString;
+    PDFWorker: typeof import('pdfjs-dist').PDFWorker;
+    PermissionFlag: typeof import('pdfjs-dist').PermissionFlag;
+    PixelsPerInch: typeof import('pdfjs-dist').PixelsPerInch;
+    RenderingCancelledException: typeof import('pdfjs-dist').RenderingCancelledException;
+    // renderTextLayer: typeof import('pdfjs-dist').renderTextLayer;
+    setLayerDimensions: typeof import('pdfjs-dist').setLayerDimensions;
+    shadow: typeof import('pdfjs-dist').shadow;
+    TextLayer: typeof import('pdfjs-dist').TextLayer;
+    UnexpectedResponseException: typeof import('pdfjs-dist').UnexpectedResponseException;
+    updateTextLayer: typeof import('pdfjs-dist').updateTextLayer;
+    Util: typeof import('pdfjs-dist').Util;
+    VerbosityLevel: typeof import('pdfjs-dist').VerbosityLevel;
+    version: typeof import('pdfjs-dist').version;
+    XfaLayer: typeof import('pdfjs-dist').XfaLayer;
+    OnProgressParameters: OnProgressParameters;
+    PDFDocumentLoadingTask: typeof import('pdfjs-dist/types/src/display/api').PDFDocumentLoadingTask;
+    PDFDocumentProxy: typeof import('pdfjs-dist/types/src/display/api').PDFDocumentProxy;
+    PDFPageProxy: PDFPageProxy;
+    RenderTask: typeof import('pdfjs-dist/types/src/display/api').RenderTask;
+    PageViewport: typeof import('pdfjs-dist/types/src/display/display_utils').PageViewport;
 }

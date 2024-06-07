@@ -65,4 +65,6 @@ const rollupConfig = [
     // },
 ];
 
+console.log(rollupConfig);
+
 export default rollupConfig;

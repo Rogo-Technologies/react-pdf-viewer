@@ -54,7 +54,6 @@ export const LocalePopover: React.FC<LocalePopoverProps> = ({
                     </MinimalButton>
                 }
                 content={() => label}
-                offset={{ left: 0, top: 8 }}
             />
         );
     };
@@ -85,7 +84,6 @@ export const LocalePopover: React.FC<LocalePopoverProps> = ({
             position={Position.BottomRight}
             target={renderTarget}
             content={renderContent}
-            offset={{ left: 0, top: 8 }}
             closeOnClickOutside={true}
             closeOnEscape={true}
         />

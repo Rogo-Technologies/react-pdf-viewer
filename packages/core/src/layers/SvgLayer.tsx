@@ -29,7 +29,7 @@ export const SvgLayer: React.FC<{
 
         page.getOperatorList().then((operatorList) => {
             empty();
-            const graphic = new pdfJsApiProvider.SVGGraphics(page.commonObjs, page.objs) as PdfJs.SVGGraphics;
+            const graphic = new (pdfJsApiProvider as any).SVGGraphics(page.commonObjs, page.objs) as PdfJs.SVGGraphics;
             graphic.getSVG(operatorList, viewport).then((svg) => {
                 // It seems that we don't have to set the size for `svg`
                 svg.style.height = `${height}px`;
