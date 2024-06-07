@@ -1,1 +1,1 @@
-export * from './esm/locale-switcher.min.js';
+export * from './esm/locale-switcher.js';

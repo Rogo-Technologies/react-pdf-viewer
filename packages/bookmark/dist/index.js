@@ -1,1 +1,1 @@
-export * from './esm/bookmark.min.js';
+export * from './esm/bookmark.js';

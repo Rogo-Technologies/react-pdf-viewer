@@ -1,1 +1,1 @@
-export * from './esm/highlight.min.js';
+export * from './esm/highlight.js';

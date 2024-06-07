@@ -1,1 +1,1 @@
-export * from './esm/selection-mode.min.js';
+export * from './esm/selection-mode.js';

@@ -1,6 +1,6 @@
 {
     "name": "@rogo-technologies/react-pdf-viewer-core",
-    "version": "3.12.5",
+    "version": "3.12.6",
     "description": "A React component to view a PDF document",
     "type": "module",
     "keywords": [

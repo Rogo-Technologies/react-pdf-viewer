@@ -1,1 +1,1 @@
-export * from './esm/scroll-mode.min.js';
+export * from './esm/scroll-mode.js';

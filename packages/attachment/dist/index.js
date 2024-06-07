@@ -1,1 +1,1 @@
-export * from './esm/attachment.min.js';
+export * from './esm/attachment.js';

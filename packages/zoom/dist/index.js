@@ -1,1 +1,1 @@
-export * from './esm/zoom.min.js';
+export * from './esm/zoom.js';

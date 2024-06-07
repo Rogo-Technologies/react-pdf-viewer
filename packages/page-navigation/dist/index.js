@@ -1,1 +1,1 @@
-export * from './esm/page-navigation.min.js';
+export * from './esm/page-navigation.js';
