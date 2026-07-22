@@ -26,6 +26,11 @@
     br::selection {
         color: transparent;
     }
+
+    // Keep text spans hit-testable above the expanded end-of-content div during drags
+    > :not(.rpv-core__text-layer-end-of-content) {
+        z-index: 1;
+    }
 }
 
 .rpv-core__text-layer-text {
@@ -34,4 +39,18 @@
     position: absolute;
     transform-origin: 0% 0%;
     white-space: pre;
+}
+
+// Catches selection focus in the gaps between text spans (see attachTextLayerSelection.ts)
+.rpv-core__text-layer-end-of-content {
+    cursor: default;
+    display: block;
+    inset: 100% 0 0;
+    position: absolute;
+    user-select: none;
+    z-index: 0;
+}
+
+.rpv-core__text-layer--selecting .rpv-core__text-layer-end-of-content {
+    top: 0;
 }
