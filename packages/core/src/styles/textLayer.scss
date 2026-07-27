@@ -23,13 +23,10 @@
         color: var(--rpv-core__text-layer-text--selection-color);
     }
 
+    // Without an explicit background the UA default highlight paints on the zero-width <br>s
     br::selection {
+        background: transparent;
         color: transparent;
-    }
-
-    // Keep text spans hit-testable above the expanded end-of-content div during drags
-    > :not(.rpv-core__text-layer-end-of-content) {
-        z-index: 1;
     }
 }
 
@@ -39,6 +36,8 @@
     position: absolute;
     transform-origin: 0% 0%;
     white-space: pre;
+    // Above the expanded end-of-content div; plugin children keep their own stacking
+    z-index: 1;
 }
 
 // Catches selection focus in the gaps between text spans (see attachTextLayerSelection.ts)
