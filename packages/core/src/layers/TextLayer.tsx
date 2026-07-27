@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import { useIsomorphicLayoutEffect } from '../hooks/useIsomorphicLayoutEffect';
+import { attachTextLayerSelection } from './attachTextLayerSelection';
 import { LayerRenderStatus } from '../structs/LayerRenderStatus';
 import { type Plugin } from '../types/Plugin';
 import { PdfJsApiContext } from '../vendors/PdfJsApiContext';
@@ -19,6 +20,7 @@ export const TextLayer: React.FC<{
 }> = ({ containerRef, page, pageIndex, plugins, rotation, scale, onRenderTextCompleted }) => {
     const { pdfJsApiProvider } = React.useContext(PdfJsApiContext);
     const renderTask = React.useRef<PdfJsTextLayer>();
+    const detachSelectionHandling = React.useRef<() => void>(() => {});
 
     const empty = (): void => {
         const containerEle = containerRef.current;
@@ -85,6 +87,7 @@ export const TextLayer: React.FC<{
                             span.classList.add('rpv-core__text-layer-text');
                         }
                     });
+                    detachSelectionHandling.current = attachTextLayerSelection(containerEle);
 
                     const didRenderProps = {
                         ele: containerEle,
@@ -114,6 +117,7 @@ export const TextLayer: React.FC<{
             // Prevent the issue where the unit tests say that there are many text found in the React 18's Strict mode
             empty();
             renderTask.current?.cancel();
+            detachSelectionHandling.current();
         };
     }, []);
 
