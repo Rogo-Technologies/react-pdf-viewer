@@ -8,12 +8,12 @@ const TEXT_LAYER_CLASS = 'rpv-core__text-layer';
 const SKIP_SPAN_CLASSING_CLASS = 'rpv-core__text-layer-text--not';
 
 // Shared across every mounted text layer, mirroring pdf.js's static TextLayerBuilder registry.
-const textLayers = new Map<HTMLElement, HTMLElement>();
+const textLayers = new Map<HTMLElement, { endOfContent: HTMLElement; detach: () => void }>();
 let globalListeners: AbortController | null = null;
 let previousRange: Range | null = null;
 let cachedIsFirefox: boolean | null = null;
 
-const resetLayer = (endOfContent: HTMLElement, textLayer: HTMLElement): void => {
+const resetLayer = (textLayer: HTMLElement, endOfContent: HTMLElement): void => {
     textLayer.append(endOfContent);
     endOfContent.style.width = '';
     endOfContent.style.height = '';
@@ -29,16 +29,16 @@ const teardownGlobalListenersIfEmpty = (): void => {
 };
 
 const resetAllLayers = (): void => {
-    textLayers.forEach(resetLayer);
+    textLayers.forEach(({ endOfContent }, layer) => resetLayer(layer, endOfContent));
 };
 
 const isFirefox = (): boolean => {
     if (cachedIsFirefox === null) {
-        const anyEndOfContent = textLayers.values().next().value;
-        if (!anyEndOfContent) {
+        const anyEntry = textLayers.values().next().value;
+        if (!anyEntry) {
             return false;
         }
-        cachedIsFirefox = getComputedStyle(anyEndOfContent).getPropertyValue('-moz-user-select') === 'none';
+        cachedIsFirefox = getComputedStyle(anyEntry.endOfContent).getPropertyValue('-moz-user-select') === 'none';
     }
     return cachedIsFirefox;
 };
@@ -57,19 +57,19 @@ const handleSelectionChange = (): void => {
     const activeLayers = new Set<HTMLElement>();
     for (let rangeIndex = 0; rangeIndex < selection.rangeCount; rangeIndex++) {
         const range = selection.getRangeAt(rangeIndex);
-        for (const layer of textLayers.keys()) {
+        textLayers.forEach((_entry, layer) => {
             if (!activeLayers.has(layer) && range.intersectsNode(layer)) {
                 activeLayers.add(layer);
             }
-        }
+        });
     }
-    for (const [layer, endOfContent] of textLayers) {
+    textLayers.forEach(({ endOfContent }, layer) => {
         if (activeLayers.has(layer)) {
             layer.classList.add(SELECTING_CLASS);
         } else {
-            resetLayer(endOfContent, layer);
+            resetLayer(layer, endOfContent);
         }
-    }
+    });
 
     // Firefox extends selection across gaps sensibly on its own; only Chromium needs the div moved.
     if (isFirefox()) {
@@ -85,11 +85,11 @@ const handleSelectionChange = (): void => {
     const anchor = anchorNode.nodeType === Node.TEXT_NODE ? anchorNode.parentElement : anchorNode;
     if (anchor instanceof HTMLElement) {
         const layer = anchor.parentElement?.closest<HTMLElement>(`.${TEXT_LAYER_CLASS}`);
-        const endOfContent = layer ? textLayers.get(layer) : undefined;
-        if (layer && endOfContent) {
-            endOfContent.style.width = layer.style.width;
-            endOfContent.style.height = layer.style.height;
-            anchor.parentElement?.insertBefore(endOfContent, modifyStart ? anchor : anchor.nextSibling);
+        const entry = layer ? textLayers.get(layer) : undefined;
+        if (layer && entry) {
+            entry.endOfContent.style.width = layer.style.width;
+            entry.endOfContent.style.height = layer.style.height;
+            anchor.parentElement?.insertBefore(entry.endOfContent, modifyStart ? anchor : anchor.nextSibling);
         }
     }
     previousRange = range.cloneRange();
@@ -109,8 +109,13 @@ const ensureGlobalListeners = (): void => {
 
 // Returns a cleanup function that detaches the layer and removes the injected div.
 export const attachTextLayerSelection = (textLayer: HTMLElement): (() => void) => {
-    if (textLayers.has(textLayer)) {
+    // A render chain resolving after unmount would otherwise pin the detached layer here forever.
+    if (!textLayer.isConnected) {
         return () => {};
+    }
+    const existing = textLayers.get(textLayer);
+    if (existing) {
+        return existing.detach;
     }
     const endOfContent = document.createElement('div');
     endOfContent.className = `${END_OF_CONTENT_CLASS} ${SKIP_SPAN_CLASSING_CLASS}`;
@@ -119,13 +124,14 @@ export const attachTextLayerSelection = (textLayer: HTMLElement): (() => void) =
         textLayer.classList.add(SELECTING_CLASS);
     };
     textLayer.addEventListener('mousedown', handleMouseDown);
-    textLayers.set(textLayer, endOfContent);
-    ensureGlobalListeners();
-
-    return () => {
+    // Idempotent so a Strict Mode double-attach can hand both effect instances the same detach.
+    const detach = (): void => {
         textLayer.removeEventListener('mousedown', handleMouseDown);
         endOfContent.remove();
         textLayers.delete(textLayer);
         teardownGlobalListenersIfEmpty();
     };
+    textLayers.set(textLayer, { endOfContent, detach });
+    ensureGlobalListeners();
+    return detach;
 };
