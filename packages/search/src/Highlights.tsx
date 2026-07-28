@@ -200,11 +200,16 @@ export const Highlights: React.FC<{
                         if (charIndexSpan.length !== 1 || charIndexSpan[0].char.trim() !== '') {
                             // Ignore the first and last spaces if we are finding the whole word
                             const normalizedCharSpan = keyword.wholeWords ? charIndexSpan.slice(1, -1) : charIndexSpan;
+                            // Skip stale indexes when the cached char->span map outlives a re-rendered text layer
+                            const targetSpan = normalizedCharSpan[0] && spans[normalizedCharSpan[0].spanIndex];
+                            if (!targetSpan) {
+                                return;
+                            }
                             const hightlighPosition = highlight(
                                 keywordStr,
                                 item.keyword,
                                 textLayerEle,
-                                spans[normalizedCharSpan[0].spanIndex],
+                                targetSpan,
                                 normalizedCharSpan,
                             );
                             if (hightlighPosition) {
