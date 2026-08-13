@@ -3,6 +3,7 @@
 import * as React from 'react';
 import { type PdfJs } from '../types/PdfJs';
 import { Annotation } from './Annotation';
+import { toAnnotationPoints } from './annotationGeometry';
 import { getContents } from './getContents';
 import { getTitle } from './getTitle';
 
@@ -54,7 +55,9 @@ export const Ink: React.FC<{
                                     fill="none"
                                     stroke="transparent"
                                     strokeWidth={borderWidth || 1}
-                                    points={inkList.map((item) => `${item.x - rect[0]},${rect[3] - item.y}`).join(' ')}
+                                    points={toAnnotationPoints(inkList)
+                                        .map((item) => `${item.x - rect[0]},${rect[3] - item.y}`)
+                                        .join(' ')}
                                 />
                             ))}
                         </svg>

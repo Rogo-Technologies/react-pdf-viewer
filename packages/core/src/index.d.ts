@@ -881,7 +881,9 @@ export declare namespace PdfJs {
             str: string;
         };
         modificationDate?: string;
-        quadPoints?: AnnotationPoint[][];
+        // pdf.js 4.5+ produces a flat `Float32Array` of coordinates; older
+        // versions produce arrays of `{ x, y }` points
+        quadPoints?: AnnotationPoint[][] | Float32Array;
         title?: string;
         titleObj?: {
             dir: string;
@@ -893,7 +895,7 @@ export declare namespace PdfJs {
         // File attachment annotation
         file?: Attachment;
         // Ink annotation
-        inkLists?: AnnotationPoint[][];
+        inkLists?: (AnnotationPoint[] | Float32Array)[];
         // Line annotation
         lineCoordinates: number[];
         // Link annotation
@@ -903,7 +905,7 @@ export declare namespace PdfJs {
         url?: string;
         newWindow?: boolean;
         // Polyline annotation
-        vertices?: AnnotationPoint[];
+        vertices?: AnnotationPoint[] | Float32Array;
         // Text annotation
         name?: string;
     }
