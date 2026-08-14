@@ -5,6 +5,7 @@ import { type PdfJs } from '../types/PdfJs';
 import { Annotation } from './Annotation';
 import { AnnotationType } from './AnnotationType';
 import { Popup } from './Popup';
+import { toQuadPoints } from './annotationGeometry';
 import { getContents } from './getContents';
 import { getTitle } from './getTitle';
 
@@ -20,10 +21,10 @@ export const Highlight: React.FC<{
     const isRenderable = !!(annotation.hasPopup || title || contents);
 
     // Check if the highlight area is constructed by multiple quadrilaterals
-    const hasQuadPoints = annotation.quadPoints && annotation.quadPoints.length > 0;
+    const quadPoints = annotation.quadPoints ? toQuadPoints(annotation.quadPoints) : [];
 
-    if (hasQuadPoints) {
-        const annotations = annotation.quadPoints.map(
+    if (quadPoints.length > 0) {
+        const annotations = quadPoints.map(
             (quadPoint) =>
                 Object.assign({}, annotation, {
                     rect: [quadPoint[2].x, quadPoint[2].y, quadPoint[1].x, quadPoint[1].y],
