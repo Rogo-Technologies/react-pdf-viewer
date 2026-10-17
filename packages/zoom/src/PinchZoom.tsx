@@ -4,6 +4,8 @@ import { useDebounceCallback, useIsomorphicLayoutEffect, type Store } from '@rog
 import * as React from 'react';
 import { type StoreProps } from './types/StoreProps';
 
+const PINCH_ZOOM_SENSITIVITY = 1 / 400;
+
 const WHEEL_EVENT_OPTIONS = {
     passive: false,
 };
@@ -34,7 +36,7 @@ export const PinchZoom: React.FC<{
 
         const target = e.target as HTMLElement;
         const rect = target.getBoundingClientRect();
-        const scaleDiff = 1 - e.deltaY / 100;
+        const scaleDiff = 1 - e.deltaY * PINCH_ZOOM_SENSITIVITY;
         const originX = e.clientX - rect.left;
         const originY = e.clientY - rect.top;
 
